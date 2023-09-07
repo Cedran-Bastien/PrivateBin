@@ -1,0 +1,7 @@
+name: make-test
+on: 
+  status
+jobs:
+  runs-on: ubuntu-latest
+  steps:
+    run: make test

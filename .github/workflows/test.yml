@@ -1,9 +1,10 @@
 name: make-test
 on: 
-  workflow_dispatch
+  push:
+    branches:
+      - "master"
 jobs:
   test-file:
-
     runs-on: ubuntu-latest
     steps:
       - run: make test

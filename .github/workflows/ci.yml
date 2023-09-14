@@ -17,4 +17,4 @@ jobs:
           bootstrap: tst/Bootstrap.php
           configuration: /phpunit.xml
           coverage_text: true
-          php_extensions: gd
+          php_extensions: gd xml

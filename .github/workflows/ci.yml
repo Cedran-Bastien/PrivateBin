@@ -19,6 +19,7 @@ jobs:
           configuration: phpunit.xml
           php_extensions: gd xml pdo mbstring zip curl dom sqlite3 xdebug
           coverage_cobertura : coverage.xml
+          memory_limit: "256M"
         env:
           XDEBUG_MODE: coverage
       

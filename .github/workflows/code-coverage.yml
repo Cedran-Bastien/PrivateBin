@@ -8,6 +8,6 @@ jobs:
     steps:
       - uses: irongut/CodeCoverageSummary@v1.3.0
         with:
-          filename: coverage.cobertura.xml
+          filename: phpunit.xml
           badge: true
           format: markdown

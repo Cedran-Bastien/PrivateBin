@@ -19,11 +19,11 @@ jobs:
           configuration: phpunit.xml
           coverage_text: true
           php_extensions: gd xml pdo mbstring zip curl dom sqlite3 xdebug
-          coverage_cobertura : coverage.cobertura.xml
+          coverage_cobertura : coverage.xml
       
       - name: Code Coverage Summary    
         uses: irongut/CodeCoverageSummary@v1.3.0
         with:
-          filename: coverage.cobertura.xml
+          filename: coverage.xml
           badge: true
           format: markdown

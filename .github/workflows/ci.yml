@@ -15,5 +15,6 @@ jobs:
         uses: php-actions/phpunit@master
         with:
           bootstrap: tst/Bootstrap.php
-          configuration: phpunit.xml
-          args: --coverage-text
+          configuration: /phpunit.xml
+          coverage_text: true
+          php_extensions: gd

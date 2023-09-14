@@ -17,4 +17,4 @@ jobs:
           bootstrap: tst/Bootstrap.php
           configuration: /phpunit.xml
           coverage_text: true
-          php_extensions: gd xml pdo mbstring zip dom curl sqlite3 sqlite
+          php_extensions: gd xml pdo mbstring zip dom curl sqlite

@@ -1,6 +1,6 @@
 name: make-test
 on: 
-  status
+  workflow_dispatch
 jobs:
   test-file:
 

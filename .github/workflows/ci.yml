@@ -29,3 +29,4 @@ jobs:
           filename: coverage.xml
           badge: true
           format: markdown
+          output : coverage-summary.md

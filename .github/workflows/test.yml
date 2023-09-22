@@ -18,12 +18,16 @@ jobs:
           php_version: 8.1
           path: lib
           standard: PSR1
-
+          report_file: phpcs.md
+    
+      - name : phpcs summary
+        run: cat phpcs.md >> $GITHUB_STEP_SUMMARY
+  
       - name: PHP Mess Detector
         uses: php-actions/phpmd@v1
         with:
           php_version: 8.1
-          path: lib/
+          path: lib
           output: text
           ruleset: cleancode
           reportfile: phpmd.md

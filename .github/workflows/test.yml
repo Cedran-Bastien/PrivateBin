@@ -26,7 +26,3 @@ jobs:
           path: lib
           output: text
           ruleset: cleancode
-          reportfile: phpmd.md
-    
-      - name : Markdown
-        run: cat phpmd.md >> $GITHUB_STEP_SUMMARY

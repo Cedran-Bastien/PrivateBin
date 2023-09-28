@@ -1,10 +1,10 @@
-name: phpcs
+name: Lint
 on: 
   push:
     branches:
       - "master"
 jobs:
-  phpcs:
+  Liting:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -25,4 +25,4 @@ jobs:
           php_version: 7.3
           path: lib
           output: text
-          ruleset: cleancode
+          ruleset: unusedcode

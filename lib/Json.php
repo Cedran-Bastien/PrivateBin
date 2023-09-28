@@ -33,7 +33,7 @@ class Json
     public static function encode($input)
     {
         $jsonString = json_encode($input);
-        self::_detectError();
+        self::detectError();
         return $jsonString;
     }
 
@@ -49,7 +49,7 @@ class Json
     public static function decode($input)
     {
         $output = json_decode($input, true);
-        self::_detectError();
+        self::detectError();
         return $output;
     }
 
@@ -61,7 +61,7 @@ class Json
      * @throws Exception
      * @return void
      */
-    private static function _detectError()
+    private static function detectError()
     {
         $errorCode = json_last_error();
         if ($errorCode === JSON_ERROR_NONE) {

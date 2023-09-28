@@ -174,7 +174,7 @@ abstract class AbstractModel
      * @param  array $data
      * @throws Exception
      */
-    protected function _validate(array $data)
+    protected function _validate()
     {
     }
 }

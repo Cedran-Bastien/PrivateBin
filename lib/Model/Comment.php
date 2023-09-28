@@ -193,4 +193,15 @@ class Comment extends AbstractModel
         }
         return $data;
     }
+    
+    /**
+     * Validate data.
+     *
+     * @access protected
+     * @param  array $data
+     * @throws Exception
+     */
+    protected function _validate(array $data)
+    {
+    }
 }

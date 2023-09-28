@@ -103,7 +103,6 @@ abstract class AbstractModel
      */
     public function setData(array $data)
     {
-        $data = $this->_sanitize($data);
         $this->_validate($data);
         $this->_data = $data;
 

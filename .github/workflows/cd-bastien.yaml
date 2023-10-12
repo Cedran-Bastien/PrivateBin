@@ -28,4 +28,4 @@ jobs:
           key: ${{ secrets.AWS_EC2_KEY }}
           script: 
             cd /var/www/html ;
-            sudo composer install     
+            composer install --ignore-platform-reqs    

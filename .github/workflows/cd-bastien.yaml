@@ -28,5 +28,4 @@ jobs:
           key: ${{ secrets.AWS_EC2_KEY }}
           script: 
             cd /var/www/html
-            sudo composer install
-            make start &        
+            sudo composer install     
